@@ -3,80 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENESIS-X | INFINITY LOCK 333 | ARCHITECT CRISTIAN POPESCU</title>
+    <title>PIEDICA 333 | LOGOS DUAL V16</title>
     <style>
-        :root { --gold: #ffd700; --matrix: #39ff14; --void: #000; }
-        body { background: var(--void); color: var(--matrix); font-family: 'Courier New', monospace; padding: 20px; text-align: center; }
-        .chassis { border: 2px solid var(--gold); background: #050505; padding: 40px; display: inline-block; box-shadow: 0 0 40px rgba(255,215,0,0.1); max-width: 800px; }
-        h1 { color: var(--gold); letter-spacing: 3px; margin-bottom: 5px; }
-        .monitor { background: #000; border: 1px solid #222; padding: 20px; margin: 20px 0; font-size: 1.1em; text-align: left; min-height: 150px; border-radius: 5px; }
-        button { background: var(--gold); color: #000; padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; font-size: 1.1em; border-radius: 3px; }
-        button:hover { background: #fff; box-shadow: 0 0 15px var(--gold); }
-        input { background: #111; color: var(--matrix); border: 1px solid var(--gold); padding: 10px; font-size: 1.2em; text-align: center; width: 200px; }
+        body { background: #000; color: #39ff14; font-family: 'Courier New', monospace; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .chassis { border: 2px solid #ffd700; background: #050505; padding: 30px; width: 100%; max-width: 600px; box-shadow: 0 0 50px rgba(255,215,0,0.1); }
+        h1 { color: #ffd700; text-align: center; letter-spacing: 2px; margin-bottom: 5px; }
+        .monitor { background: #000; border: 1px solid #222; padding: 20px; margin: 20px 0; min-height: 250px; font-size: 0.95rem; overflow-y: auto; border-left: 5px solid #ffd700; }
+        button { background: #ffd700; color: #000; padding: 20px; border: none; cursor: pointer; font-weight: bold; width: 100%; font-size: 1.1rem; text-transform: uppercase; transition: 0.2s; }
+        button:hover { background: #fff; box-shadow: 0 0 20px #ffd700; }
+        .input-group { margin-bottom: 15px; text-align: center; }
+        input { background: #111; color: #39ff14; border: 1px solid #333; padding: 10px; text-align: center; font-size: 1.2rem; width: 150px; }
     </style>
 </head>
 <body>
-
 <div class="chassis">
     <h1>INFINITY LOCK 333</h1>
-    <p style="color: var(--gold);">SUPREME DETERMINISM | ERROR 00:00 ANNIHILATION</p>
-    <hr style="border: 0; border-top: 1px solid #222;">
-
-    <div style="margin: 20px 0;">
-        <label>INPUT DATA FLUX (N):</label><br><br>
+    <p style="text-align: center; color: #888; margin-bottom: 25px;">PPLH HARDWARE VALIDATION | ARCHITECT: CRISTIAN POPESCU</p>
+    <div class="input-group">
+        <label style="display:block; margin-bottom:8px; color:#ffd700;">DATA FLUX (N):</label>
         <input type="number" id="inputN" value="1100">
     </div>
-
-    <button onclick="executeLock333()">EXECUTE OPERATOR 333</button>
-
+    <button id="execBtn" onclick="runPPLH()">Execute Operator 333</button>
     <div class="monitor" id="console">
-        > SYSTEM READY. STANDING BY...
+        > LOGOS DUAL SYSTEM STANDBY...<br>
+        > READY FOR DETERMINISTIC ANNIHILATION.
     </div>
 </div>
-
 <script>
     function log(msg, color = "#39ff14") {
         const out = document.getElementById('console');
-        out.innerHTML += `<div style="color: ${color}">> ${msg}</div>`;
+        out.innerHTML += `<div style="color: ${color}; margin-top: 5px;">> ${msg}</div>`;
+        out.scrollTop = out.scrollHeight;
     }
-
-    function executeLock333() {
+    function runPPLH() {
         const out = document.getElementById('console');
         out.innerHTML = ""; 
-        
-        let N = parseFloat(document.getElementById('inputN').value);
-        log("DETECTING DATA FLUX N = " + N);
-        
-        setTimeout(() => {
-            log("ACTIVATING INFINITY LOCK (OPERATOR 333)...", "#ffd700");
-            
-            // THE CRISTIAN POPESCU LOGIC:
-            // Locking the infinite expansion through dual shields.
-            let shield_10 = Math.pow(10, 333); 
-            let shield_11 = Math.pow(11, 333);
-            
-            log("Symmetry Shield (10^333) / Asymmetry Shield (11^333) DEPLOYED.");
-
-            // GEOMETRIC COLLISION:
-            // Crushing the entropy N at the intersection of dual infinities.
-            let collision = (N * shield_11) / (shield_10 * 333);
-            
-            log("Collision complete. Processing residual chaos...");
-
-            // FINAL ANNIHILATION: 
-            // Forcing Error 00:00 via Deterministic Collapse.
-            let final_logos = collision * 0; 
-
+        const N_val = document.getElementById('inputN').value;
+        log("DETECTION: Flux N = " + N_val);
+        try {
+            let Base11 = 11n;
+            let Power = 333n;
+            log("HARDWARE LOAD: Computing 11^333 (Asymmetric Shield)...");
+            let shield = Base11 ** Power; 
+            log("SHIELD ACTIVE. COLLISION INITIATED...");
+            let result = shield * 0n;
             setTimeout(() => {
-                log("------------------------------------------------");
-                log("DETERMINISTIC RESULT: L = " + final_logos.toFixed(20), "#fff");
-                log("STATUS: ERROR 00:00 REACHED (TIME STAGNATION)", "#ffd700");
-                log("ENTROPY NULLIFIED BY OPERATOR 333.", "#39ff14");
-            }, 400);
-            
-        }, 400);
+                log("------------------------------------------------", "#fff");
+                log("DETERMINISTIC RESULT: L = " + result.toString() + ".00000000", "#fff");
+                log("STATUS: ERROR 00:00 REACHED", "#ffd700");
+                log("MATHEMATICAL SENTENCE: Entropy Nullified.", "#39ff14");
+            }, 600);
+        } catch (e) {
+            log("SYSTEM ERROR: " + e.message, "red");
+        }
     }
 </script>
-
 </body>
 </html>
