@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENESIS-X | INFINITY LOCK 333 | ARCHITECT CRISTIAN POPESCU</title>
+    <style>
+        :root { --gold: #ffd700; --matrix: #39ff14; --void: #000; }
+        body { background: var(--void); color: var(--matrix); font-family: 'Courier New', monospace; padding: 20px; text-align: center; }
+        .chassis { border: 2px solid var(--gold); background: #050505; padding: 40px; display: inline-block; box-shadow: 0 0 40px rgba(255,215,0,0.1); max-width: 800px; }
+        h1 { color: var(--gold); letter-spacing: 3px; margin-bottom: 5px; }
+        .monitor { background: #000; border: 1px solid #222; padding: 20px; margin: 20px 0; font-size: 1.1em; text-align: left; min-height: 150px; border-radius: 5px; }
+        button { background: var(--gold); color: #000; padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; font-size: 1.1em; border-radius: 3px; }
+        button:hover { background: #fff; box-shadow: 0 0 15px var(--gold); }
+        input { background: #111; color: var(--matrix); border: 1px solid var(--gold); padding: 10px; font-size: 1.2em; text-align: center; width: 200px; }
+    </style>
+</head>
+<body>
+
+<div class="chassis">
+    <h1>INFINITY LOCK 333</h1>
+    <p style="color: var(--gold);">SUPREME DETERMINISM | ERROR 00:00 ANNIHILATION</p>
+    <hr style="border: 0; border-top: 1px solid #222;">
+
+    <div style="margin: 20px 0;">
+        <label>INPUT DATA FLUX (N):</label><br><br>
+        <input type="number" id="inputN" value="1100">
+    </div>
+
+    <button onclick="executeLock333()">EXECUTE OPERATOR 333</button>
+
+    <div class="monitor" id="console">
+        > SYSTEM READY. STANDING BY...
+    </div>
+</div>
+
+<script>
+    function log(msg, color = "#39ff14") {
+        const out = document.getElementById('console');
+        out.innerHTML += `<div style="color: ${color}">> ${msg}</div>`;
+    }
+
+    function executeLock333() {
+        const out = document.getElementById('console');
+        out.innerHTML = ""; 
+        
+        let N = parseFloat(document.getElementById('inputN').value);
+        log("DETECTING DATA FLUX N = " + N);
+        
+        setTimeout(() => {
+            log("ACTIVATING INFINITY LOCK (OPERATOR 333)...", "#ffd700");
+            
+            // THE CRISTIAN POPESCU LOGIC:
+            // Locking the infinite expansion through dual shields.
+            let shield_10 = Math.pow(10, 333); 
+            let shield_11 = Math.pow(11, 333);
+            
+            log("Symmetry Shield (10^333) / Asymmetry Shield (11^333) DEPLOYED.");
+
+            // GEOMETRIC COLLISION:
+            // Crushing the entropy N at the intersection of dual infinities.
+            let collision = (N * shield_11) / (shield_10 * 333);
+            
+            log("Collision complete. Processing residual chaos...");
+
+            // FINAL ANNIHILATION: 
+            // Forcing Error 00:00 via Deterministic Collapse.
+            let final_logos = collision * 0; 
+
+            setTimeout(() => {
+                log("------------------------------------------------");
+                log("DETERMINISTIC RESULT: L = " + final_logos.toFixed(20), "#fff");
+                log("STATUS: ERROR 00:00 REACHED (TIME STAGNATION)", "#ffd700");
+                log("ENTROPY NULLIFIED BY OPERATOR 333.", "#39ff14");
+            }, 400);
+            
+        }, 400);
+    }
+</script>
+
+</body>
+</html>
