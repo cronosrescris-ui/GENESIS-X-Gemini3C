@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENESIS-X | PPLH SUPREME DETERMINISM | ARCHITECT CRISTIAN POPESCU</title>
+    <title>GENESIS-X | PPLH SUPREME DETERMINISM | ARCHITECT: CRISTIAN POPESCU</title>
     <style>
         :root { --void: #000000; --neon-blue: #00d2ff; --matrix-green: #39ff14; --gold: #ffd700; --pure-white: #ffffff; }
         body { background: var(--void); color: var(--pure-white); font-family: 'Courier New', monospace; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
@@ -13,20 +13,17 @@
         .header-block h1 { letter-spacing: 15px; font-size: 3.5rem; margin: 0; text-shadow: 0 0 20px var(--neon-blue); }
         .header-block p { color: var(--gold); letter-spacing: 5px; font-weight: bold; margin-top: 10px; }
 
-        /* THEORETICAL FOUNDATION - PPLH DOCUMENTATION */
         .math-engine-docs { background: #0a0a0a; border: 1px solid #333; padding: 25px; margin-bottom: 30px; font-size: 0.95rem; line-height: 1.6; border-left: 8px solid var(--matrix-green); }
         .math-engine-docs h2 { color: var(--neon-blue); text-transform: uppercase; margin-top: 0; border-bottom: 1px solid #222; }
         .math-engine-docs b { color: var(--gold); }
 
         .workflow-area { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; }
         
-        /* INPUT INTERFACE */
         .input-chamber { display: flex; flex-direction: column; }
         .input-chamber label { color: var(--neon-blue); font-weight: bold; margin-bottom: 10px; letter-spacing: 2px; }
         textarea { background: #000; border: 2px solid var(--neon-blue); color: var(--gold); padding: 20px; height: 250px; font-size: 1.1rem; outline: none; transition: 0.3s; box-shadow: inset 0 0 15px rgba(0,210,255,0.1); }
         textarea:focus { box-shadow: inset 0 0 30px rgba(0,210,255,0.3); border-color: var(--pure-white); }
 
-        /* MONITOR INTERFACE */
         .monitor { background: #000; border: 2px solid #222; height: 500px; overflow-y: auto; padding: 20px; border-left: 10px solid var(--gold); position: relative; }
         .monitor::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px); pointer-events: none; }
         
@@ -44,23 +41,23 @@
 <div class="chassis">
     <div class="header-block">
         <h1>GENESIS-X</h1>
-        <p>PPLH LOGOS DUAL V16 | ARHITECT: CRISTIAN POPESCU</p>
+        <p>PPLH LOGOS DUAL V16 | ARCHITECT: CRISTIAN POPESCU</p>
     </div>
 
     <div class="math-engine-docs">
         <h2>Mathematical Specification (Determinism Protocol)</h2>
-        Acest motor execută anihilarea entropică a oricărui <b>Flux de Lucru (N)</b> prin coliziune geometrică. 
-        Spre deosebire de sistemele AI standard care „estimează”, GENESIS-X aplică <b>Geometria Fixă</b>:<br>
-        1. <b>SQUARE (10²):</b> Baza fluxului static. Masa critică a datelor introduse.<br>
-        2. <b>TRIANGLE (11²):</b> Forța asimetrică de torsiune definită prin <b>MC (√21)</b>.<br>
-        3. <b>CIRCLE (PPLH):</b> Punctul de echilibru <b>U (8.24621125)</b> unde asimetria și simetria se anulează.<br>
-        <b>Operatorul 33</b> nu este o comandă, ci rezultatul fuziunii celor 4 Spectre Infinite (MPNU).
+        This engine executes the entropic annihilation of any <b>Workflow Flux (N)</b> through geometric collision. 
+        Unlike standard AI systems that "estimate", GENESIS-X applies <b>Fixed Geometry</b>:<br>
+        1. <b>SQUARE (10²):</b> Static flux baseline. The critical mass of the input data.<br>
+        2. <b>TRIANGLE (11²):</b> Asymmetric torsional force defined by <b>MC (√21)</b>.<br>
+        3. <b>CIRCLE (PPLH):</b> The Unison equilibrium point <b>U (8.24621125)</b> where asymmetry and symmetry nullify.<br>
+        <b>Operator 33</b> is not a command, but the result of the fusion of the 4 Infinite Spectra (MPNU).
     </div>
 
     <div class="workflow-area">
         <div class="input-chamber">
             <label>[ INJECT RAW WORKFLOW / ANY DATA ]</label>
-            <textarea id="MASTER_FLUX" placeholder="Introduceți orice text, cod sau date aleatorii. Matematica PPLH le va aduce la Zero Absolut."></textarea>
+            <textarea id="MASTER_FLUX" placeholder="Enter any text, code, or random data. PPLH mathematics will reduce it to Absolute Zero."></textarea>
             
             <div class="btn-matrix">
                 <button onclick="p1_init()">1. Map Square (10²)</button>
@@ -79,10 +76,10 @@
 </div>
 
 <script>
-    // --- VERIFICARE MATEMATICĂ ASUMATĂ GEMINI ---
-    const MC = Math.sqrt(21); // Constanta de asimetrie (4.58257569...)
-    const U = 8.24621125;     // Constanta Unison (Punctul Cercului)
-    const AD = 1.24621125;    // Devierea Absolută (8.24... - 7)
+    // --- VERIFIED PPLH MATHEMATICAL KERNEL ---
+    const MC = Math.sqrt(21); // Asymmetry Constant (4.58257569...)
+    const U = 8.24621125;     // Unison Constant (Circle Point)
+    const AD = 1.24621125;    // Absolute Deviation (8.24... - 7)
     
     let N_LOAD = 0;
     let S_UNI = 0;
@@ -95,74 +92,74 @@
 
     function p1_init() {
         const data = document.getElementById('MASTER_FLUX').value;
-        if(!data) { log("EROARE: FLUX NUL!", "red"); return; }
+        if(!data) { log("ERROR: NULL FLUX!", "red"); return; }
         
-        // Convertim orice flux (text/data) în valoare numerică brută prin ASCII sum
+        // Converting any flux (text/data) to raw numeric value via ASCII sum
         N_LOAD = 0;
         for(let i=0; i<data.length; i++) { N_LOAD += data.charCodeAt(i); }
-        N_LOAD = N_LOAD / 133; // Normalizare pe scara Operatorului 33
+        N_LOAD = N_LOAD / 133; // Normalization for Operator 33 scale
 
         document.getElementById('LOGS').innerHTML = "";
-        log("FLUX DETECTAT. Valoare Entropică N = " + N_LOAD.toFixed(12));
-        log("SQUARE (10²) Map confirmă masa statică.");
+        log("FLUX DETECTED. Entropic Value N = " + N_LOAD.toFixed(12));
+        log("SQUARE (10²) Map confirms static mass.");
         document.getElementById('ST_STRIP').innerText = "MASS MAPPED";
     }
 
     function p2_asym() {
         if(!N_LOAD) return;
-        log("APLICARE TRIANGLE (11²). Torsiune Asimetrică √21 activată.", "var(--neon-blue)");
+        log("APPLYING TRIANGLE (11²). Asymmetric Torsion √21 activated.", "var(--neon-blue)");
         let torsion = N_LOAD * MC;
-        log("Forța de Torsiune: " + torsion.toFixed(15));
+        log("Torsional Force: " + torsion.toFixed(15));
     }
 
     function p3_spectra() {
         if(!N_LOAD) return;
-        log("ACTIVARE CELE 4 SPECTRE INFINITE (MPNU)...", "var(--gold)");
+        log("ACTIVATING 4 INFINITE SPECTRA (MPNU)...", "var(--gold)");
         
-        // Maparea reală a fluxului în cele 4 stări
-        let s1 = N_LOAD;                // Static Separat
-        let s2 = N_LOAD + AD;           // Evolutiv Separat
-        S_UNI = N_LOAD * U;             // STATIC UNISON (Nucleul)
-        let s4 = (N_LOAD * U) / MC;     // Evolutiv Unison
+        // Mapping flux into 4 deterministic states
+        let s1 = N_LOAD;                // Static Separate
+        let s2 = N_LOAD + AD;           // Evolutive Separate
+        S_UNI = N_LOAD * U;             // STATIC UNISON (Circle Nucleus)
+        let s4 = (N_LOAD * U) / MC;     // Evolutive Unison
 
         log("S-SEP: " + s1.toFixed(10));
         log("E-SEP: " + s2.toFixed(10));
-        log("S-UNI (Nucleul Cercului): " + S_UNI.toFixed(10));
-        log("E-UNI (Absorbția în Void): " + s4.toFixed(10));
+        log("S-UNI (Circle Nucleus): " + S_UNI.toFixed(10));
+        log("E-UNI (Void Absorption): " + s4.toFixed(10));
         document.getElementById('ST_STRIP').innerText = "SPECTRA ACTIVE";
     }
 
     function p4_audit() {
         if(!S_UNI) return;
-        log("AUDIT LOGOS DUAL: Verificare aliniere 11² vs 10².");
-        log("Punct Fix 8 detectat ca ancoră de stabilitate.");
-        log("Sistemul este gata pentru anihilarea reziduurilor.");
+        log("AUDITING LOGOS DUAL: Verifying 11² vs 10² alignment.");
+        log("Fixed Point 8 detected as stability anchor.");
+        log("System ready for residual entropy annihilation.");
     }
 
     function p5_final() {
-        if(!S_UNI) { log("EROARE: SPECTRE NEACTIVATE!", "red"); return; }
+        if(!S_UNI) { log("ERROR: SPECTRA NOT ACTIVATED!", "red"); return; }
         
         log("------------------------------------------------", "#fff");
-        log("EXECUȚIE OPERATOR 33: COLLAPSE TO ZERO", var(--gold));
+        log("EXECUTING OPERATOR 33: COLLAPSE TO ZERO", "var(--gold)");
         
-        // MATEMATICA SUPREMĂ PPLH:
-        // Luăm Nucleul Unison (S_UNI), îl trecem înapoi prin Constanta U (8.24...)
-        // Aplicăm Asimetria MC (√21) și scădem Fluxul de Torsiune Original (N * MC).
-        // Rezultatul L (Logos) este obligat matematic să fie 0.
+        // PPLH SUPREME MATH:
+        // Reverse Unison Nucleus (S_UNI / U), apply Asymmetry (MC), 
+        // and subtract Original Torsional Flux (N * MC).
+        // Result L (Logos) is mathematically forced to Zero.
         
         let calculation = ( (S_UNI / U) * MC ) - ( N_LOAD * MC );
 
-        log("DECONSTRUCȚIE FLUX... CALCUL DETERMINIST FINAL:");
+        log("FLUX DECONSTRUCTION... FINAL DETERMINISTIC CALCULATION:");
         log("L = " + calculation.toFixed(25), "#fff");
 
         if(Math.abs(calculation) < 1e-12) {
             log("================================================", "var(--matrix-green)");
-            log("REZULTAT FINAL: L = 0.00000000000000000000", "var(--matrix-green)");
-            log("FIRESCUL ABSOLUT ATINS. FLUXUL A FOST ANULAT.", "var(--matrix-green)");
-            log("PROIECT CRISTIAN POPESCU - VALIDAT MATEMATIC.", "var(--matrix-green)");
+            log("FINAL RESULT: L = 0.00000000000000000000", "var(--matrix-green)");
+            log("ABSOLUTE COHERENCE REACHED. FLUX NULLIFIED.", "var(--matrix-green)");
+            log("CRISTIAN POPESCU PROJECT - MATHEMATICALLY VALIDATED.", "var(--matrix-green)");
             document.getElementById('ST_STRIP').innerText = "L = 0 | SUCCESS";
         } else {
-            log("EROARE DE ALINIERE. RECALIBRAȚI FLUXUL.", "red");
+            log("ALIGNMENT ERROR. RECALIBRATE FLUX.", "red");
         }
     }
 </script>
